@@ -5,7 +5,7 @@ from pydantic import BaseModel
 class File(BaseModel):
     name: str
     type: str
-    time: float
+    time: int
 
 
 class MetaData(BaseModel):

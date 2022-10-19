@@ -1,12 +1,10 @@
 import os
 from typing import List
 
-from config import BASE_PATH
-
 
 class FileService:
 
-    def __init__(self, dir_path: str = BASE_PATH) -> None:
+    def __init__(self, dir_path: str) -> None:
         self.dir_path = dir_path
 
     def __get_type(self, file_name: str) -> str:

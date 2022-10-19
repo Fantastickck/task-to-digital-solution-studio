@@ -1,1 +1,4 @@
-BASE_PATH = r'C:\Users\artem\Desktop\py\Test Tasks\task-to-digital-solution-studio\src'
+import os
+
+
+BASE_PATH = os.path.join('/', 'etc')
