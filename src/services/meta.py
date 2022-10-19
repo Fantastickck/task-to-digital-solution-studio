@@ -2,7 +2,7 @@ import os
 from typing import List
 
 
-class FileService:
+class MetaDataService:
 
     def __init__(self, dir_path: str) -> None:
         self.dir_path = dir_path
@@ -18,7 +18,7 @@ class FileService:
         created_time = os.stat(path_to_file).st_ctime
         return round(created_time * 1000)
 
-    def get_files_data(self) -> List[dict]:
+    def get_meta_data(self) -> List[dict]:
         files = os.listdir(self.dir_path)
         data = []
         for f in files:
